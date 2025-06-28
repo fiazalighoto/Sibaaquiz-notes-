@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FAQUIZ - Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header with Motivational Quote -->
+  <header class="header">
+    <div class="quote-box">
+      <p class="quote" aria-label="Motivational Quote">
+        "Education is the most powerful weapon you can use to change the world." — Nelson Mandela
+      </p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+
+    <!-- Login Section -->
+    <section id="login-section" class="card login-card">
+      <h1 class="site-title">FAQUIZ</h1>
+      <form id="login-form" novalidate>
+        <label for="username">Full Name</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter your full name"
+          required
+          autocomplete="name"
+        />
+
+        <label for="phone">Pakistani Phone Number</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="03xxxxxxxxx"
+          pattern="03\d{9}"
+          required
+          autocomplete="tel"
+          inputmode="tel"
+        />
+
+        <label for="password">Access Code</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter code"
+          required
+          autocomplete="current-password"
+        />
+
+        <button type="submit" id="login-btn" class="btn primary">Login</button>
+      </form>
+      <p class="free-note">This website is totally free for my beloved scholars.</p>
+    </section>
+
+    <!-- Dashboard (hidden initially) -->
+    <section id="dashboard" class="hidden">
+
+      <!-- QuickQuiz Section -->
+      <div id="quickquiz" class="card section-block">
+        <h2>QuickQuiz (100 MCQs Placeholder)</h2>
+        <div class="quiz-buttons" role="group" aria-label="QuickQuiz Tests">
+          <button class="btn quiz-btn" data-quiz="Quiz 1">Quiz 1</button>
+          <button class="btn quiz-btn" data-quiz="Quiz 2">Quiz 2</button>
+          <button class="btn quiz-btn" data-quiz="Quiz 3">Quiz 3</button>
+          <button class="btn quiz-btn" data-quiz="Quiz 4">Quiz 4</button>
+          <button class="btn quiz-btn" data-quiz="Quiz 5">Quiz 5</button>
+        </div>
+      </div>
+
+      <!-- Subject Quizzes Section -->
+      <div id="subjects" class="card section-block">
+        <h2>Subject Quizzes (50 MCQs Each)</h2>
+        <div class="quiz-buttons" role="group" aria-label="Subject Quizzes">
+          <button class="btn quiz-btn" data-quiz="Science">Science</button>
+          <button class="btn quiz-btn" data-quiz="Mathematics">Math</button>
+          <button class="btn quiz-btn" data-quiz="English">English</button>
+          <button class="btn quiz-btn" data-quiz="General knowledge & Current affairs">G.K. + CA</button>
+        </div>
+      </div>
+
+      <!-- Notes Section -->
+      <div id="notes" class="card section-block">
+        <h2>One-Line Notes</h2>
+        <div class="notes-controls">
+          <label for="class-select">Class:</label>
+          <select id="class-select" aria-label="Select Class">
+            <option value="" disabled selected>Choose Class</option>
+            <option value="Class 3">Class 3</option>
+            <option value="Class 4">Class 4</option>
+            <option value="Class 5">Class 5</option>
+            <option value="Class 6">Class 6</option>
+            <option value="Class 7">Class 7</option>
+            <option value="Class 8">Class 8</option>
+            <option value="Class 9">Class 9</option>
+            <option value="Class 10">Class 10</option>
+            <option value="Class 11">Class 11</option>
+            <option value="Class 12">Class 12</option>
+          </select>
+
+          <label for="subject-select">Subject:</label>
+          <select id="subject-select" aria-label="Select Subject">
+            <option value="" disabled selected>Choose Subject</option>
+            <option value="English">English</option>
+            <option value="Math">Math</option>
+            <option value="Science">Science</option>
+            <option value="Physics">Physics</option>
+            <option value="Chemistry">Chemistry</option>
+            <option value="Zoology">Zoology</option>
+            <option value="Botany">Botany</option>
+            <option value="Social + Pakistan Studies">Social + Pakistan Studies</option>
+            <option value="Islamiat">Islamiat</option>
+            <option value="Computer">Computer</option>
+          </select>
+        </div>
+        <div id="notes-display" class="notes-display" aria-live="polite"></div>
+        <div class="notes-nav">
+          <button id="notes-prev" class="btn secondary hidden" aria-label="Previous Notes">⬅ Previous</button>
+          <button id="notes-next" class="btn secondary hidden" aria-label="Next Notes">Next ➡</button>
+        </div>
+      </div>
+
+      <!-- Competition Section -->
+      <div id="competition" class="card section-block">
+        <h2>🏆 Win 5000</h2>
+        <ul class="rules">
+          <li>Competition starts when <strong>100+</strong> join.</li>
+          <li>Held every <strong>Sunday</strong>.</li>
+          <li>If quota not met, postponed to next Sunday.</li>
+          <li>One winner receives prize on Monday.</li>
+          <li>Entry fee: <strong>Rs. 100</strong> (non‑refundable).</li>
+          <li>T&C: Only valid entries; FAQUIZ reserves rights.</li>
+        </ul>
+        <div class="comp-buttons">
+          <button id="accept-comp" class="btn primary">Accept</button>
+          <button id="reject-comp" class="btn secondary">Reject</button>
+        </div>
+        <div id="comp-placeholder" class="placeholder hidden" aria-live="polite">
+          <p><strong>Coming Soon...</strong></p>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>All rights reserved © FAQUIZ</p>
+  </footer>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>

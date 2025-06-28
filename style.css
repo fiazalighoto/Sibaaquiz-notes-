@@ -1,0 +1,217 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body & Fonts */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f1c0f;
+  color: #cfe8c9;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header & Quote */
+.header {
+  background-color: #081308;
+  border-bottom: 3px solid #2ecc71;
+  padding: 2rem;
+  text-align: center;
+}
+.quote {
+  font-style: italic;
+  color: #2ecc71;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* Main Container */
+.container {
+  flex: 1;
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+/* Cards */
+.card {
+  background-color: #1a2d1a;
+  border: 2px solid #2ecc71;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+.section-block h2 {
+  color: #2ecc71;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Buttons */
+.btn {
+  font-size: 1rem;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid #2ecc71;
+  background-color: transparent;
+  color: #cfe8c9;
+  margin: 0.5rem;
+}
+.btn:hover {
+  background-color: #2ecc71;
+  color: #0f1c0f;
+}
+.btn.primary {
+  background-color: #2ecc71;
+  color: #0f1c0f;
+}
+.btn.secondary {
+  background-color: #081308;
+  color: #d4af37;
+}
+
+/* Login Section */
+.login-card {
+  max-width: 400px;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+.site-title {
+  font-size: 3rem;
+  color: #2ecc71;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.login-card form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.login-card label {
+  text-align: left;
+  margin-top: 0.8rem;
+  color: #a0d77c;
+}
+.login-card input {
+  padding: 0.8rem;
+  margin-top: 0.3rem;
+  border: 1px solid #2ecc71;
+  border-radius: 6px;
+  background-color: #0f1c0f;
+  color: #cfe8c9;
+}
+.free-note {
+  margin-top: 1rem;
+  font-style: italic;
+  color: #a0d77c;
+}
+
+/* Quiz Buttons Layout */
+.quiz-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+.quiz-btn {
+  min-width: 140px;
+  border-radius: 10px;
+  background-color: #2a4f2a;
+  color: #2ecc71;
+  border: 2px solid #2ecc71;
+  padding: 0.7rem;
+  font-weight: bold;
+}
+.quiz-btn:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+/* Notes Section */
+.notes-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.notes-controls label {
+  align-self: center;
+  color: #a0d77c;
+}
+.notes-controls select {
+  padding: 0.6rem;
+  border: 1px solid #2ecc71;
+  border-radius: 6px;
+  background-color: #0f1c0f;
+  color: #cfe8c9;
+}
+.notes-display {
+  background-color: #1a2d1a;
+  border: 1px solid #2ecc71;
+  border-radius: 6px;
+  padding: 1rem;
+  min-height: 120px;
+  margin-bottom: 1rem;
+}
+.notes-display p {
+  padding: 0.3rem 0;
+}
+.notes-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Competition Section */
+.rules {
+  list-style: none;
+  padding-left: 1.2rem;
+  margin-bottom: 1rem;
+}
+.rules li::before {
+  content: '•';
+  color: #2ecc71;
+  display: inline-block;
+  width: 1em;
+}
+.comp-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.placeholder {
+  text-align: center;
+  font-style: italic;
+  color: #a0d77c;
+  padding: 1rem;
+}
+
+/* Hidden Utility */
+.hidden {
+  display: none;
+}
+
+/* Footer */
+.footer {
+  background-color: #081308;
+  border-top: 3px solid #2ecc71;
+  text-align: center;
+  padding: 1rem;
+  color: #a0d77c;
+}
+
+/* Summary Text Colors */
+.green {
+  color: #00ff66;
+}
+.red {
+  color: #ff4444;
+}
