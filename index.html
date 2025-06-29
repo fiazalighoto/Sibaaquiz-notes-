@@ -21,45 +21,16 @@
   <main class="container">
 
     <!-- Login Section -->
-    <section id="login-section" class="card login-card">
-      <h1 class="site-title">FAQUIZ</h1>
-      <form id="login-form" novalidate>
-        <label for="username">Full Name</label>
-        <input
-          type="text"
-          id="username"
-          name="username"
-          placeholder="Enter your full name"
-          required
-          autocomplete="name"
-        />
-
-        <label for="phone">Pakistani Phone Number</label>
-        <input
-          type="tel"
-          id="phone"
-          name="phone"
-          placeholder="03xxxxxxxxx"
-          pattern="03\d{9}"
-          required
-          autocomplete="tel"
-          inputmode="tel"
-        />
-
-        <label for="password">Access Code</label>
-        <input
-          type="password"
-          id="password"
-          name="password"
-          placeholder="Enter code"
-          required
-          autocomplete="current-password"
-        />
-
-        <button type="submit" id="login-btn" class="btn primary">Login</button>
+    <section id="login-section" class="login-card">
+      <h2 class="site-title">Welcome to FAQUIZ</h2>
+      <form id="login-form">
+        <label for="username">Enter Your Name:</label>
+        <input type="text" id="username" placeholder="e.g. Fiaz" required />
+        <button type="submit" class="btn primary">Login</button>
       </form>
-      <p class="free-note">This website is totally free for my beloved scholars.</p>
     </section>
+
+    <p class="free-note">This website is totally free for my beloved scholars.</p>
 
     <!-- Dashboard (hidden initially) -->
     <section id="dashboard" class="hidden">
@@ -156,7 +127,7 @@
     <p>All rights reserved © FAQUIZ</p>
   </footer>
 
-  <!-- JavaScript File -->
+  <!-- JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
