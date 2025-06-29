@@ -205,8 +205,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   {q:"Zakat is ___ pillar of Islam.", opts:["1st", "2nd", "3rd", "4th"], ans:2},
   {q:"First Wahi came in which cave?", opts:["Hira", "Thaur", "Uhud", "Safa"], ans:0},
-  {q:"Who built Kaaba first?", opts:["Ibrahim A.S & Ismail A.S", "Adam A.S", "Musa A.S", "Quraish"], ans:1},
-  {q:"How many Rakaat in Fajr (with Sunnah)?", opts:["4", "2", "6", "5"], ans:3},
+  {q:"Who built Kaaba first?", opts:["Ibrahim A.S & Ismail A.S", "Adam A.S", "Musa A.S", "Quraish"], ans:0},
+  {q:"How many Rakaat in Fajr (with Sunnah)?", opts:["4", "2", "6", "5"], ans:0},
   {q:"How many Makki Surahs in Quran?", opts:["86", "28", "36", "100"], ans:0},
 
   {q:"Google was founded in which year?", opts:["1996", "1997", "1998", "1999"], ans:2},
